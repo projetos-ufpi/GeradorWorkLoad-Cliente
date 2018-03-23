@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/edt_send_message"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_send"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="55dp"
+        android:layout_weight="1"
+        android:hint="Enviar Mensagem"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_gera_carga01"
+        android:layout_alignStart="@+id/edt_send_message"
+        android:layout_marginBottom="7dp"
+        android:width="30dp"
+        android:text="Enviar" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tr_send_message"
+        android:layout_marginTop="25dp"
+        android:id="@+id/scrollView2">
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_reply_from_server"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="129dp"
+        android:orientation="vertical" />
+
+    <Button
+        android:id="@+id/btn_gera_carga03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_reply_from_server"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/btn_send"
+        android:layout_marginBottom="0dp"
+        android:text="Iniciar Carga 03" />
+
+    <Button
+        android:id="@+id/btn_gera_carga01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_gera_carga02"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/btn_gera_carga02"
+        android:text="Iniciar Carga 01" />
+
+    <Button
+        android:id="@+id/btn_gera_carga02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_gera_carga03"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/btn_gera_carga03"
+        android:text="Iniciar Carga 02" />
+
+    <EditText
+        android:id="@+id/edt_ip_config"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edt_send_message"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:hint="Insira o IP"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btn_Salva_ip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edt_ip_config"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="24dp"
+        android:text="Salvar" />
+</RelativeLayout>
