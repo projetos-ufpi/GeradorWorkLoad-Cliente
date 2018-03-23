@@ -27,24 +27,13 @@
         android:text="Enviar" />
 
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/tr_send_message"
-        android:layout_marginTop="25dp"
-        android:id="@+id/scrollView2">
-
-    </ScrollView>
-
     <TextView
         android:id="@+id/tv_reply_from_server"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="129dp"
+        android:layout_marginBottom="119dp"
         android:orientation="vertical" />
 
     <Button
@@ -84,7 +73,7 @@
         android:layout_marginBottom="36dp"
         android:ems="10"
         android:hint="Insira o IP"
-        android:inputType="textPersonName" />
+        android:inputType="text" />
 
     <Button
         android:id="@+id/btn_Salva_ip"

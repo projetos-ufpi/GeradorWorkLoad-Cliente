@@ -111,7 +111,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                             String s = mTextViewReplyFromServer.getText().toString();
                             if (st.trim().length() != 0)
-                                mTextViewReplyFromServer.setText(s + "\nFrom Server : " + st);
+                                //ABAIXO ESTÁ A RESPOSTA DOR SERVIDOR PARA O CLIENTE
+                                mTextViewReplyFromServer.setText(s + "\nResposta Server: " + st);
                         }
                     });
 
