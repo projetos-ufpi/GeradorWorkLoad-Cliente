@@ -1,30 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-
-    <EditText
-        android:id="@+id/edt_send_message"
-        android:layout_width="310dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/btn_send"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="55dp"
-        android:layout_weight="1"
-        android:hint="Enviar Mensagem"
-        android:inputType="text" />
-
-    <Button
-        android:id="@+id/btn_send"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/btn_gera_carga01"
-        android:layout_alignStart="@+id/edt_send_message"
-        android:layout_marginBottom="7dp"
-        android:width="30dp"
-        android:text="Enviar" />
 
 
     <TextView
@@ -36,51 +16,143 @@
         android:layout_marginBottom="119dp"
         android:orientation="vertical" />
 
-    <Button
-        android:id="@+id/btn_gera_carga03"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/tv_reply_from_server"
-        android:layout_alignParentEnd="true"
-        android:layout_alignStart="@+id/btn_send"
-        android:layout_marginBottom="0dp"
-        android:text="Iniciar Carga 03" />
-
-    <Button
-        android:id="@+id/btn_gera_carga01"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/btn_gera_carga02"
-        android:layout_alignParentEnd="true"
-        android:layout_alignStart="@+id/btn_gera_carga02"
-        android:text="Iniciar Carga 01" />
-
-    <Button
-        android:id="@+id/btn_gera_carga02"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/btn_gera_carga03"
-        android:layout_alignParentEnd="true"
-        android:layout_alignStart="@+id/btn_gera_carga03"
-        android:text="Iniciar Carga 02" />
-
     <EditText
         android:id="@+id/edt_ip_config"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/edt_send_message"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="36dp"
+        android:layout_below="@+id/btn_send"
+        android:layout_marginTop="25dp"
         android:ems="10"
         android:hint="Insira o IP"
-        android:inputType="text" />
+        android:inputType="text"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="67dp" />
 
     <Button
         android:id="@+id/btn_Salva_ip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/edt_ip_config"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="24dp"
-        android:text="Salvar" />
+        android:layout_alignStart="@+id/button4"
+        android:text="Salvar"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="256dp"
+        tools:layout_editor_absoluteY="67dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edt_ip_config"
+        android:layout_marginTop="30dp"
+        android:text="Quantidade de Palavras:"
+        android:textSize="8pt"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="236dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="15dp"
+        android:text="100" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edt_ip_config"
+        android:layout_alignTop="@+id/button2"
+        android:layout_marginEnd="9dp"
+        android:text="1000" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_marginStart="27dp"
+        android:layout_toEndOf="@+id/button3"
+        android:text="10k" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="10dp"
+        android:text="100k" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button5"
+        android:layout_alignEnd="@+id/button3"
+        android:text="1M" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button6"
+        android:layout_alignStart="@+id/button4"
+        android:text="2M" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button5"
+        android:text="4M" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button8"
+        android:layout_alignBottom="@+id/button8"
+        android:layout_alignStart="@+id/button6"
+        android:text="5M" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button7"
+        android:layout_alignTop="@+id/button9"
+        android:text="8M" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button8"
+        android:layout_below="@+id/button8"
+        android:text="10M" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button11"
+        android:layout_alignEnd="@+id/button9"
+        android:text="15M" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button12"
+        android:layout_alignStart="@+id/button10"
+        android:text="20M" />
+
 </RelativeLayout>
