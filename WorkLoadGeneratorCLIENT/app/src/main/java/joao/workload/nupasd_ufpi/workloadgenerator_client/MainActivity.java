@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -826,6 +827,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onClick(View view) {
                 ip_destino = edt_ip_config.getText().toString();
+                Toast.makeText(MainActivity.this, "IP SALVO: "+ip_destino, Toast.LENGTH_SHORT).show();
             }
         });
 
